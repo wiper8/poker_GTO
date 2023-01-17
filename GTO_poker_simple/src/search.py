@@ -3,12 +3,12 @@ import pickle
 import numpy as np
 from copy import deepcopy
 
-from leduc.card import Card
-from leduc.node import MNode as Node
-from leduc.monte import learn, Search
+from src.card import Card
+from src.node import MNode as Node
+from src.monte import learn, Search
 from itertools import permutations
-from leduc.state import Leduc as State
-from leduc.hand_eval import leduc_eval as eval
+from src.state import Leduc as State
+from src.hand_eval import leduc_eval as eval
 
 
 class Pluribus:

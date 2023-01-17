@@ -1,4 +1,4 @@
-from leduc.node import Node
+from src.node import Node
 
 
 def test_init():

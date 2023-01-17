@@ -4,19 +4,19 @@ import numpy as np
 
 from itertools import permutations
 from tqdm import tqdm
-from leduc.best_response import exploitability
-from leduc.node import Node
-from leduc.card import Card
-from leduc.util import expected_utility
+from src.best_response import exploitability
+from src.node import Node
+from src.card import Card
+from src.util import expected_utility
 
 
 def learn(iterations, cards, num_cards, node_map, action_map):
     if len(cards) > 4:
-        from leduc.state import Leduc as State
-        from leduc.hand_eval import leduc_eval as eval
+        from src.state import Leduc as State
+        from src.hand_eval import leduc_eval as eval
     else:
-        from leduc.state import State
-        from leduc.hand_eval import kuhn_eval as eval
+        from src.state import State
+        from src.hand_eval import kuhn_eval as eval
     all_combos = [list(t) for t in set(permutations(cards, num_cards))]
     num_players = len(node_map)
     for _ in tqdm(range(iterations), desc="learning"):

@@ -1,14 +1,14 @@
 import json
 import pytest
 
-from leduc.state import Leduc as State
-from leduc.state import Player
-from leduc.hand_eval import leduc_eval
-from leduc.vanilla import learn
-from leduc.util import expected_utility
-from leduc.monte import learn as mc_learn
-from leduc.best_response import exploitability
-from leduc.card import Card
+from src.state import Leduc as State
+from src.state import Player
+from src.hand_eval import leduc_eval
+from src.vanilla import learn
+from src.util import expected_utility
+from src.monte import learn as mc_learn
+from src.best_response import exploitability
+from src.card import Card
 
 
 def test_valid_actions():

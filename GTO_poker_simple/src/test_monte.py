@@ -2,11 +2,11 @@ import json
 import numpy as np
 
 
-from leduc.monte import learn, expected_utility, update_strategy
-from leduc.hand_eval import kuhn_eval
-from leduc.card import Card
-from leduc.node import MNode as Node
-from leduc.state import State
+from src.monte import learn, expected_utility, update_strategy
+from src.hand_eval import kuhn_eval
+from src.card import Card
+from src.node import MNode as Node
+from src.state import State
 
 np.random.seed(0)
 

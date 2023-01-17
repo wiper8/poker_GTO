@@ -2,10 +2,10 @@ import json
 import numpy as np
 
 
-from leduc.vanilla import learn
-from leduc.util import expected_utility
-from leduc.best_response import exploitability
-from leduc.card import Card
+from src.vanilla import learn
+from src.util import expected_utility
+from src.best_response import exploitability
+from src.card import Card
 
 
 def test_expected_utility():
