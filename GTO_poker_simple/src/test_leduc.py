@@ -1,14 +1,14 @@
 import json
 import pytest
 
-from src.state import Leduc as State
-from src.state import Player
-from src.hand_eval import leduc_eval
-from src.vanilla import learn
-from src.util import expected_utility
-from src.monte import learn as mc_learn
-from src.best_response import exploitability
-from src.card import Card
+from GTO_poker_simple.src.state import Leduc as State
+from GTO_poker_simple.src.state import Player
+from GTO_poker_simple.src.hand_eval import leduc_eval
+from GTO_poker_simple.src.vanilla import learn
+from GTO_poker_simple.src.util import expected_utility
+from GTO_poker_simple.src.monte import learn as mc_learn
+from GTO_poker_simple.src.best_response import exploitability
+from GTO_poker_simple.src.card import Card
 
 
 def test_valid_actions():

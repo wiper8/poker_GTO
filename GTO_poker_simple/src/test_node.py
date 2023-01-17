@@ -1,4 +1,4 @@
-from src.node import Node
+from GTO_poker_simple.src.node import Node
 
 
 def test_init():

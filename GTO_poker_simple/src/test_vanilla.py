@@ -2,10 +2,10 @@ import json
 import numpy as np
 
 
-from src.vanilla import learn
-from src.util import expected_utility
-from src.best_response import exploitability
-from src.card import Card
+from GTO_poker_simple.src.vanilla import learn
+from GTO_poker_simple.src.util import expected_utility
+from GTO_poker_simple.src.best_response import exploitability
+from GTO_poker_simple.src.card import Card
 
 
 def test_expected_utility():

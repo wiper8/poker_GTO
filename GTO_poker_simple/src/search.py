@@ -3,12 +3,12 @@ import pickle
 import numpy as np
 from copy import deepcopy
 
-from src.card import Card
-from src.node import MNode as Node
-from src.monte import learn, Search
+from GTO_poker_simple.src.card import Card
+from GTO_poker_simple.src.node import MNode as Node
+from GTO_poker_simple.src.monte import learn, Search
 from itertools import permutations
-from src.state import Leduc as State
-from src.hand_eval import leduc_eval as eval
+from GTO_poker_simple.src.state import Leduc as State
+from GTO_poker_simple.src.hand_eval import leduc_eval as eval
 
 
 class Pluribus:

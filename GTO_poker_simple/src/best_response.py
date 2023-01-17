@@ -5,11 +5,11 @@ from itertools import permutations
 
 def exploitability(cards, num_cards, node_map, action_map):
     if len(cards) > 4:
-        from src.state import Leduc as State
-        from src.hand_eval import leduc_eval as eval
+        from GTO_poker_simple.src.state import Leduc as State
+        from GTO_poker_simple.src.hand_eval import leduc_eval as eval
     else:
-        from src.state import State
-        from src.hand_eval import kuhn_eval as eval
+        from GTO_poker_simple.src.state import State
+        from GTO_poker_simple.src.hand_eval import kuhn_eval as eval
 
     public_states, start = build_tree(cards, len(node_map))
     exploit = 0 
@@ -22,11 +22,11 @@ def exploitability(cards, num_cards, node_map, action_map):
 
 def build_tree(cards, num_players):
     if len(cards) > 4:
-        from src.state import Leduc as State
-        from src.hand_eval import leduc_eval as eval
+        from GTO_poker_simple.src.state import Leduc as State
+        from GTO_poker_simple.src.hand_eval import leduc_eval as eval
     else:
-        from src.state import State
-        from src.hand_eval import kuhn_eval as eval
+        from GTO_poker_simple.src.state import State
+        from GTO_poker_simple.src.hand_eval import kuhn_eval as eval
     
     state = State(cards, num_players, eval)
     public_states = {} 

@@ -2,11 +2,11 @@ import json
 import numpy as np
 
 
-from src.monte import learn, expected_utility, update_strategy
-from src.hand_eval import kuhn_eval
-from src.card import Card
-from src.node import MNode as Node
-from src.state import State
+from GTO_poker_simple.src.monte import learn, expected_utility, update_strategy
+from GTO_poker_simple.src.hand_eval import kuhn_eval
+from GTO_poker_simple.src.card import Card
+from GTO_poker_simple.src.node import MNode as Node
+from GTO_poker_simple.src.state import State
 
 np.random.seed(0)
 

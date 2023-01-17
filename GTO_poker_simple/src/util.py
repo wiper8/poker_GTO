@@ -6,11 +6,11 @@ from tqdm import tqdm
 def expected_utility(cards, num_cards, num_players,
                      node_map, action_map):
     if len(cards) > 4:
-        from src.state import Leduc as State
-        from src.hand_eval import leduc_eval as eval
+        from GTO_poker_simple.src.state import Leduc as State
+        from GTO_poker_simple.src.hand_eval import leduc_eval as eval
     else:
-        from src.state import State
-        from src.hand_eval import kuhn_eval as eval
+        from GTO_poker_simple.src.state import State
+        from GTO_poker_simple.src.hand_eval import kuhn_eval as eval
     cards = sorted(cards)
     all_combos = [list(t) for t in set(permutations(cards, num_cards))]
 

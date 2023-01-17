@@ -5,11 +5,11 @@ import numpy as np
 from copy import deepcopy
 from itertools import permutations
 from tqdm import tqdm
-from src.best_response import exploitability
-from src.node import MNode as Node
-from src.card import Card
-from src.hand_eval import leduc_eval
-from src.util import expected_utility, bias
+from GTO_poker_simple.src.best_response import exploitability
+from GTO_poker_simple.src.node import MNode as Node
+from GTO_poker_simple.src.card import Card
+from GTO_poker_simple.src.hand_eval import leduc_eval
+from GTO_poker_simple.src.util import expected_utility, bias
 
 STRAT_INTERVAL = 100
 PRUNE_THRESH = 200
@@ -20,11 +20,11 @@ REGRET_MIN = -300000
 
 def learn(iterations, cards, num_cards, node_map, action_map):
     if len(cards) > 4:
-        from src.state import Leduc as State
-        from src.hand_eval import leduc_eval as eval
+        from GTO_poker_simple.src.state import Leduc as State
+        from GTO_poker_simple.src.hand_eval import leduc_eval as eval
     else:
-        from src.state import State
-        from src.hand_eval import kuhn_eval as eval
+        from GTO_poker_simple.src.state import State
+        from GTO_poker_simple.src.hand_eval import kuhn_eval as eval
 
     all_combos = [list(t) for t in set(permutations(cards, num_cards))]
     num_players = len(node_map)

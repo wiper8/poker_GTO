@@ -1,10 +1,10 @@
 import numpy as np
 import pytest
 
-from src.state import State
-from src.state import Leduc
-from src.card import Card
-from src.hand_eval import kuhn_eval, leduc_eval
+from GTO_poker_simple.src.state import State
+from GTO_poker_simple.src.state import Leduc
+from GTO_poker_simple.src.card import Card
+from GTO_poker_simple.src.hand_eval import kuhn_eval, leduc_eval
 
 
 def test_turn():
